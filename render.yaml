@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: gato-online
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    routes:
+      - type: http
+        source: /
+        targetPort: 3000
