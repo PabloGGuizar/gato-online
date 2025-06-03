@@ -1,0 +1,12 @@
+{
+  "name": "gato-online",
+  "version": "1.0.0",
+  "description": "Juego del gato multijugador con WebSocket",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.0.0"
+  }
+}
